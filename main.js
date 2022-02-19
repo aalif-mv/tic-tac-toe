@@ -19,7 +19,7 @@ let player = {name: "", color: ""};
 let isFromLink = false;
 let host = false;
 
-const socket = io('http://192.168.18.4:3000');
+const socket = io('https://pure-falls-71096.herokuapp.com/');
 
 socket.on('init', handleInit);
 socket.on('joined', handleJoined);
