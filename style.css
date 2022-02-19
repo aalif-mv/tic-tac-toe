@@ -182,7 +182,7 @@ body {
     padding: 10px;
     top: -350px;
     display: none;
-    background-color: purple;
+    background-color: rgb(255, 106, 255);
     border-radius: 20px;
     -webkit-animation-name: animatejoin;
     -webkit-animation-duration: 1s;
