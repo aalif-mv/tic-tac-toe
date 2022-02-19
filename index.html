@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="home_page_container" id="homePageContainer">
+        <div id="room_manager">
+            <input type="text" id="create_room_code" placeholder="code">
+            <button onclick="newGame();">Create Room</button>
+            <br><br><br>
+            <input type="text" id="room_code" placeholder="code">
+            <button onclick="joinGame(code.value.trim());">Join Room</button>
+        </div>
+        <div id="player_inputs">
+            <input type="text" id="name" placeholder="Enter your name"><br><br>
+            <input type="color" id="color"><br><br>
+            <button onclick="updatePlayer();">Save</button>
+        </div>
+    </div>
+    <div class="players" id="active_players">
+        <h3>Active players</h3>
+        <ul id="playerList">
+        </ul>
+    </div>
+    <div class="wait_for_players" id="waitForPlayers" style="display: none;">
+        <div class="animate_join" id="player_join"></div>
+        <div class="loader"></div>
+        <h3>Waiting for players</h3>
+        <button onclick="start();" id="startBtn" style="display: none;">Start</button>
+        <div class="game_code" id="copyCode" onclick="copy(room, 'copyCode');"></div>
+        <div class="game_code" id="copyLink" onclick="copy(window.location.href, 'copyLink');"></div>
+    </div>
+    <div id="gameContainer" style="display:none; grid-template-rows: auto auto auto; grid-template-columns:auto">
+        <br><br><br>
+        <div class="game_container">
+            <button id="1" class="game_button" onclick="buttonPress(1);"></button>
+            <button id="2" class="game_button" onclick="buttonPress(2);"></button>
+            <button id="3" class="game_button" onclick="buttonPress(3);"></button>
+            <button id="4" class="game_button" onclick="buttonPress(4);"></button>
+            <button id="5" class="game_button" onclick="buttonPress(5);"></button>
+            <button id="6" class="game_button" onclick="buttonPress(6);"></button>
+            <button id="7" class="game_button" onclick="buttonPress(7);"></button>
+            <button id="8" class="game_button" onclick="buttonPress(8);"></button>
+            <button id="9" class="game_button" onclick="buttonPress(9);"></button>
+        </div>
+        <button onclick="reset();" id="reset" style="display:none ;border: none; padding: 20px; width:200px; font-size: 22px;">Reset</button>
+    </div>
+    <script src="https://cdn.socket.io/4.4.1/socket.io.min.js" integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
