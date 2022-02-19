@@ -126,6 +126,7 @@ function updatePlayer() {
         joinGame(getUrl());
         isFromLink = false;
     }
+    home.style.gridTemplateColumns = "auto auto";
 }
 
 function copy(str, id) {
