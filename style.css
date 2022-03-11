@@ -80,7 +80,7 @@ body {
     grid-gap: 10px;
     padding: 10px;
     border-radius: 20px;
-    background-image: url("images/1.png");
+    background-image: url("/images/1.png");
 }
 .game_container button {
     border: solid black 0px;
