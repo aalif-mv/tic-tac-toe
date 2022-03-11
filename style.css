@@ -80,7 +80,7 @@ body {
     grid-gap: 10px;
     padding: 10px;
     border-radius: 20px;
-    background-image: url("tic-tac-toe/images/background.png");
+    background-image: url("images/background.png");
 }
 .game_container button {
     border: solid black 0px;
