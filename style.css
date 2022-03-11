@@ -80,13 +80,13 @@ body {
     grid-gap: 10px;
     padding: 10px;
     border-radius: 20px;
-    background-image: url("images/background.png");
+    background-image: url("tic-tac-toe/images/background.png");
 }
 .game_container button {
     border: solid black 0px;
     padding: 50px;
     border-radius: 20px;
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(0,0,0,0);
 }
 .game_container button:hover {
     background-color: rgb(112, 221, 240);
