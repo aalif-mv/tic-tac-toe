@@ -80,16 +80,17 @@ body {
     grid-gap: 10px;
     padding: 10px;
     border-radius: 20px;
-    background-image: url('images/background.png');
+    background-image: url(images/background.png);
+    border: 5px solid #a23d0145;
 }
 .game_container button {
-    border: solid black 0px;
     padding: 50px;
     border-radius: 20px;
-    background-color: aqua;
+    background-color: #a23d0145;
+    border: 3px solid black;
 }
 .game_container button:hover {
-    background-color: rgb(112, 221, 240);
+    background-color: #a23d0145;
 }
 .game_container button.active {
     background-color: rgb(32, 255, 32);
