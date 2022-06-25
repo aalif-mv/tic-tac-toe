@@ -92,7 +92,7 @@ function handleRecv(msg) {
     }
 }
 function handleWon(msg) {
-    let won = document.getElementById('won_msg');
+    let won = document.getElementById('win_msg');
     won_msg.innerText = JSON.parse(msg);
     won_msg.style.display = 'block';
 }
