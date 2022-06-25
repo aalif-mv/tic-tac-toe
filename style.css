@@ -90,7 +90,7 @@ body {
     border: 3px solid black;
 }
 .game_container button:hover {
-    background-color: #a23d0145;
+    background-color: #a23d0154;
 }
 .game_container button.active {
     background-color: rgb(32, 255, 32);
