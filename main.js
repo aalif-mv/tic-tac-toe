@@ -94,7 +94,9 @@ function handleRecv(msg) {
 function handleWon(msg) {
     let win = document.getElementById('win_msg');
     win.innerText = JSON.parse(msg);
-    win.style.top = '50';
+    win.style.top = '50px';
+    
+    setTimeout(() => {win.style.top = '-100px'}, 6000);
 }
 function buttonPress(id) {
     socket.emit('btnPress', {id: id, room: room});
