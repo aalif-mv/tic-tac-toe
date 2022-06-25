@@ -96,7 +96,7 @@ function handleWon(msg) {
     win.innerText = JSON.parse(msg);
     win.style.top = '50px';
     
-    setTimeout(() => {win.style.top = '-100px'}, 6000);
+    setTimeout(() => {win.style.top = '-100px'}, 4000);
 }
 function buttonPress(id) {
     socket.emit('btnPress', {id: id, room: room});
