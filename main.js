@@ -103,7 +103,7 @@ function buttonPress(id) {
 }
 function mark(msg) {
     const btn = document.getElementById(JSON.parse(msg).id);
-    btn.style.backgroundColor = JSON.parse(msg).player.color + '40';
+    btn.style.backgroundColor = JSON.parse(msg).player.color + '85';
     btn.disabled = true;
 }
 function start() {
