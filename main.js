@@ -103,6 +103,7 @@ function buttonPress(id) {
 }
 function mark(msg) {
     const btn = document.getElementById(JSON.parse(msg).id);
+    console.log(JSON.parse(msg).player.color);
     btn.style.backgroundColor = JSON.parse(msg).player.color;
     btn.disabled = true;
 }
