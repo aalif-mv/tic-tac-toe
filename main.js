@@ -92,9 +92,9 @@ function handleRecv(msg) {
     }
 }
 function handleWon(msg) {
-    let won = document.getElementById('win_msg');
-    won_msg.innerText = JSON.parse(msg);
-    won_msg.style.display = 'block';
+    let win = document.getElementById('win_msg');
+    win.innerText = JSON.parse(msg);
+    win.style.top = '50';
 }
 function buttonPress(id) {
     socket.emit('btnPress', {id: id, room: room});
